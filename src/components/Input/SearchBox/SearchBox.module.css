@@ -1,0 +1,55 @@
+.searchBox {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    gap: 1rem;
+    background-color: rgba(255, 228, 196, 1);
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    border-radius: 5rem;
+    margin: .8rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    overflow: hidden;
+    transition-duration: .3s;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1rem;
+    box-shadow:
+        0 -2px 1px rgba(0, 0, 0, 0.573) inset,
+        0 -4px 1px rgba(0, 0, 0, 0.192) inset;
+}
+
+.searchBox:focus-within {
+    width: calc(100% - 2rem);
+}
+
+.searchBox:not(:focus-within) {
+    transform: scale(1.2);
+}
+
+.searchBox span {
+    position: absolute;
+    left: 1rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .3s;
+}
+
+.searchBox input {
+    width: calc(100% - 1px);
+    padding: .5rem .5rem .5rem 0;
+    border: none;
+    outline: none;
+    font-size: large;
+    width: max-content;
+    background-color: transparent;
+    width: 100%;
+    padding: .5rem .5rem .5rem 2.5rem;
+}
+
+.searchBox textarea::-webkit-scrollbar {
+    display: none;
+
+}

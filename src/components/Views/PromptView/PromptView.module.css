@@ -1,0 +1,11 @@
+.promptView {
+    width: 25%;
+    height: 100vh;
+    min-width: 20rem;
+    border-collapse: collapse;
+    display: flex;
+    position: relative;
+    /* align-items: center; */
+    flex-direction: column;
+    border-right: 1px solid rgba(0, 0, 0, 0.178);
+}

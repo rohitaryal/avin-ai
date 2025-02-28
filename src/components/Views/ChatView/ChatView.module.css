@@ -1,0 +1,10 @@
+.chatView {
+    flex: 1;
+    padding: .5rem;
+    overflow: hidden auto;
+    padding-bottom: 6rem;
+}
+
+.chatView::-webkit-scrollbar {
+    display: none;
+}

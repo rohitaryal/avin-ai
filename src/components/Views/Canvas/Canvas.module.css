@@ -1,0 +1,15 @@
+.canvas {
+    padding: 1rem;
+    overflow: auto;
+    flex: 1;
+    height: 100vh;
+    background-size: 30px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: rgb(255, 255, 255);
+    background-image: radial-gradient(rgba(0, 0, 0, 0.356) 1px, transparent 0);
+    background-size: 20px 20px;
+}
+
+.canvas::-webkit-scrollbar {
+    display: none;
+}
