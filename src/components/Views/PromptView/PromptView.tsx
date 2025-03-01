@@ -49,7 +49,7 @@ function PromptView({ addimage }: PromptViewProps) {
     }, [newChat]);
 
     const FetchText = async (message: string) => {
-        const response = await fetch("https://ai.erucix.workers.dev?message=" + encodeURI(message),
+        const response = await fetch(`https://avin-backend.erucix.workers.dev/chat?prompt=${encodeURI(message)}`,
             {
                 method: 'POST',
                 body: JSON.stringify(newChat),
